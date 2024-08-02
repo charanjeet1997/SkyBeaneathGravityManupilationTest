@@ -44,6 +44,10 @@ namespace Games.SkyBeaneathTest
 			{
 				stateMachine.ChangeState(stateMachine.jumpState);
 			}
+			if (!stateMachine.groundCheckData.isGrounded)
+			{
+				stateMachine.ChangeState(stateMachine.jumpState);
+			}
 			base.Transition();
 		}
 
